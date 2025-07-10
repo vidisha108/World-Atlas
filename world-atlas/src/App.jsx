@@ -1,10 +1,11 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import {Home} from "./pages/Home";
-import {About} from "./pages/About";
-import {Country} from "./pages/Country";
-import {Contact} from "./pages/Contact";
+import { Home } from "./pages/Home";
+import { About } from "./pages/About";
+import { Country } from "./pages/Country";
+import { Contact } from "./pages/Contact";
 import { AppLayout } from "./components/layout/AppLayout";
 import { ErrorPage } from "./pages/ErrorPage";
+import { CountryDetails } from "./components/layout/CountryDetails";
 
 import "./App.css";
 
@@ -25,6 +26,10 @@ const router = createBrowserRouter([
     {
     path: "country",
     element: <Country />,
+  },
+  {
+    path: "country/:id", //':' means creating dynamic route
+    element: <CountryDetails />,
   },
     {
     path: "contact",
