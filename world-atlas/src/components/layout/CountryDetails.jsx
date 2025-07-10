@@ -9,7 +9,7 @@ export const CountryDetails = () =>{
   const[isPending, stateTransition] =  useTransition();
      const[country, setCountry] = useState();
      useEffect(() =>{ 
-         startTransition(async () => {
+         stateTransition(async () => {
          const res = await getCountryIndData(params.id);
          if(res.status === 200){
          setCountry(res.data[0]);

@@ -1,4 +1,5 @@
 import { FaLongArrowAltRight } from "react-icons/fa";
+import { NavLink } from "react-router-dom";
 export const HeroSection = () => {
     return (
         <main className="hero-section main">
@@ -11,9 +12,10 @@ export const HeroSection = () => {
                                 Discover the history, culture, and beauty of every nation.
                                 Search, and filter through countries to find the details.
                             </p>
+                            <NavLink to="/country">
                             <button className="btn btn-darken btn-inline bg-white-box">
                               Start Exploring <FaLongArrowAltRight />
-                            </button>
+                            </button> </NavLink>
                         </div>
                         <div className="hero-image">
                             <img src="/images/world.png" alt="world image" className="banner-image" />

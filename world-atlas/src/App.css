@@ -26,6 +26,7 @@ h5 {
   color: #fff;
 }
 
+
 p,
 li,
 a,
@@ -42,6 +43,8 @@ li {
 
 a {
   color: #000;
+  text-decoration: none;
+ 
 
   &:hover {
     color: #2e86c1;

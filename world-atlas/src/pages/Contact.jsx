@@ -26,7 +26,7 @@ export const Contact = () =>{
                 className="form-control"
                 rows="10"
                 required
-                autoComplete="false" 
+                autoComplete="off" 
                 placeholder="Enter your message"
                 name="message" ></textarea>
 
